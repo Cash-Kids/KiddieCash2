@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "599801194665",
+    "project_id": "kiddie-cash",
+    "storage_bucket": "kiddie-cash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599801194665:android:057853b0c0979f27f321b8",
+        "android_client_info": {
+          "package_name": "com.example.kiddiecash2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599801194665-76vevsvkiu094cl0hqg9tqdv2o7k7c3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJDKeyezihs8PCWSetcGYhNkh4tc36mv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599801194665-76vevsvkiu094cl0hqg9tqdv2o7k7c3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
