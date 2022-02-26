@@ -20,7 +20,12 @@
         android:label="fragment_data"
         tools:layout="@layout/fragment_data" >
         <action
-            android:id="@+id/action_dataFragment_to_homeFragment2"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_dataFragment_to_jobSpecFragment"
+            app:destination="@id/jobSpecFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/jobSpecFragment"
+        android:name="com.example.kiddiecash2.JobSpecFragment"
+        android:label="fragment_job_spec"
+        tools:layout="@layout/fragment_job_spec" />
 </navigation>

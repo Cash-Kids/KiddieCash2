@@ -17,12 +17,6 @@ class DataFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_data, container, false)
-//        val button = view.findViewById<Button>(R.id.button)
-//        What is homefragment2... why is there a 2?
-
-//        button.setOnClickListener{
-//            findNavController().navigate(R.id.action_dataFragment_to_homeFragment2)
-//        }
         return view
     }
 
