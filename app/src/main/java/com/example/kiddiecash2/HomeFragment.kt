@@ -6,10 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 
 
 class HomeFragment : Fragment() {
+
+    var navController: NavController? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -18,10 +21,10 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         val button = view.findViewById<Button>(R.id.button)
-        button.setOnClickListener{
+        button.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_dataFragment)
         }
-        return view
+            return view
+        }
     }
 
-}
