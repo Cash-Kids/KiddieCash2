@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">KiddieCash2</string>
-    <string name="title_activity_maps">MapsActivity</string>
-    <string name="new_user_signup">New Here ? <b>SignUp</b></string>
-    <string name="welcome_to_kiddie_cash">Welcome to Kiddie Cash</string>
-    <string name="logout">Logout</string><!--to make SignUp Bold-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
