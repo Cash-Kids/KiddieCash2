@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 
 
@@ -18,11 +19,27 @@ class DataFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_data, container, false)
 
-        val button = view.findViewById<Button>(R.id.button)
-        button.setOnClickListener{
-            findNavController().navigate(R.id.action_homeFragment_to_dataFragment)
+           return view
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+//        navController = Navigation.findNavController(view)
+
+
+        view?.findViewById<ImageView>(R.id.imageView)?.setOnClickListener {
+            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment()
+            findNavController().navigate(dataToJob)
         }
-        return view
+        view?.findViewById<ImageView>(R.id.imageView2)?.setOnClickListener {
+            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment()
+            findNavController().navigate(dataToJob)
+        }
+        view?.findViewById<ImageView>(R.id.imageView3)?.setOnClickListener {
+            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment()
+            findNavController().navigate(dataToJob)
+        }
+
+
     }
 
 }
