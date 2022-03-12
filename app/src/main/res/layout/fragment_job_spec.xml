@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/displayJobImg"
         android:layout_width="114dp"
         android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.364"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/displayJobImg"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.11" />
 
@@ -37,12 +37,13 @@
         android:layout_height="49dp"
         android:layout_marginTop="48dp"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/displayJobImg"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -52,6 +53,7 @@
         android:layout_height="57dp"
         android:layout_marginBottom="296dp"
         android:ems="10"
+        android:hint="Address"
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,6 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Date Requested"
         android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,7 +95,7 @@
         android:layout_width="332dp"
         android:layout_height="67dp"
         android:layout_marginTop="8dp"
-        android:hint="Job Description"
+        android:hint="Add'l Instructions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +106,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Price"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

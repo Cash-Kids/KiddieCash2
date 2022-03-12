@@ -8,9 +8,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 
 
 class DataFragment : Fragment() {
+
+    val args: JobSpecFragment by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -18,6 +21,9 @@ class DataFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_data, container, false)
+
+
+
 
            return view
     }
@@ -27,15 +33,28 @@ class DataFragment : Fragment() {
 
 
         view?.findViewById<ImageView>(R.id.imageView)?.setOnClickListener {
-            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment()
+            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
             findNavController().navigate(dataToJob)
+
+            val imageView : ImageView = view.findViewById(R.id.imageView)
+//            val input = imageView.text.toString()
+
+            // Using bundles to transfer data between fragments
+            val bundle = Bundle()
+//            bundle.putString("data", input)
+            // want to transfer to JobSpecFragment
+            val dataFragment = JobSpecFragment()
+//            fragment.arguments = bundle
+//            fragmentManager?.beginTransaction()?.replace(R.id.nav_container,fragment)?.commit()
+
+
         }
         view?.findViewById<ImageView>(R.id.imageView2)?.setOnClickListener {
-            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment()
+            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
             findNavController().navigate(dataToJob)
         }
         view?.findViewById<ImageView>(R.id.imageView3)?.setOnClickListener {
-            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment()
+            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
             findNavController().navigate(dataToJob)
         }
 

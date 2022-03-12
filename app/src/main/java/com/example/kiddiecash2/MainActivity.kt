@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity()  {
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,12 +17,20 @@ class MainActivity : AppCompatActivity() {
             .findFragmentById(R.id.fragment) as NavHostFragment
             navController = navHostFragment.navController
 
-//        // "default_activity_button" may be named incorrectly
-//
-//        val loginButton = findViewById<Button>(R.id.button)
-//        loginButton.setOnClickListener {
-//            val Intent = Intent(this,SecondActivity::class.java)
-//            startActivity(Intent)
-//        }
+//        val dataFragment = DataFragment()
+//        supportFragmentManager.beginTransaction().replace(R.id.fragment_container,dataFragment).commit()
+
+
     }
-}
+
+//    override fun passDataCom(editTextInput: String) {
+//        val bundle = Bundle()
+//        bundle.putString("message", editTextInput)
+//
+//        val transaction = this.supportFragmentManager.beginTransaction()
+//        val jobSpecFragment = JobSpecFragment()
+//        jobSpecFragment.arguments = bundle
+//
+//        transaction.replace(R.id.fragment_container, jobSpecFragment)
+//        transaction.commit()
+    }
