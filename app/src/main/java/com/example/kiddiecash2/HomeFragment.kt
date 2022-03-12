@@ -13,7 +13,6 @@ import androidx.navigation.Navigation.findNavController
 
 class HomeFragment : Fragment() {
 
-
     private lateinit var navController: NavController
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

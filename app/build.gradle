@@ -52,5 +52,7 @@ dependencies {
 
     implementation "androidx.navigation:navigation-fragment-ktx:2.4.1"
     implementation "androidx.navigation:navigation-ui-ktx:2.4.1"
+//    color palette for app - this required a migrate to Android X and a Refactor
+    implementation('androidx.palette:palette:1.0.0')
 
 }

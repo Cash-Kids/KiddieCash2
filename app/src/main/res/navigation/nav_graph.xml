@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_jobSpecFragment_to_confirmationFragment"
             app:destination="@id/confirmationFragment" />
+        <argument
+            android:name="jobImage1"
+            app:argType="integer" />
     </fragment>
 
     <fragment
