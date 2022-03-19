@@ -13,7 +13,7 @@ import androidx.navigation.fragment.navArgs
 
 class DataFragment : Fragment() {
 
-    val args: JobSpecFragment by navArgs()
+    val args: JobSpecFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
