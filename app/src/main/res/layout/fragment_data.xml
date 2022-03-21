@@ -5,18 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DataFragment">
+    tools:context=".JobFragment">
 
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/shovelTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Shovel Soldier"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintHorizontal_bias="0.61"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.708" />
@@ -75,7 +75,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/lawnTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lawn Warrior"
@@ -88,7 +88,7 @@
         app:layout_constraintVertical_bias="0.205" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/poopTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Poop Patroller"

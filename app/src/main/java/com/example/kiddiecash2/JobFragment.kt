@@ -5,15 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 
 
-class DataFragment : Fragment() {
+class JobFragment : Fragment() {
 
-    val args: JobSpecFragmentArgs by navArgs()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,7 +33,8 @@ class DataFragment : Fragment() {
 
 
         view?.findViewById<ImageView>(R.id.imageView)?.setOnClickListener {
-            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
+            val lawnWarrior : TextView = view.findViewById(R.id.lawnTitle)
+            val dataToJob = JobFragmentDirections.actionJobFragmentToJobSpecLawn()
             findNavController().navigate(dataToJob)
 
             val imageView : ImageView = view.findViewById(R.id.imageView)
@@ -43,22 +44,30 @@ class DataFragment : Fragment() {
             val bundle = Bundle()
 //            bundle.putString("data", input)
             // want to transfer to JobSpecFragment
-            val dataFragment = JobSpecFragment()
+            val dataFragment = JobSpecPoopFragment()
 //            fragment.arguments = bundle
 //            fragmentManager?.beginTransaction()?.replace(R.id.nav_container,fragment)?.commit()
 
 
         }
         view?.findViewById<ImageView>(R.id.imageView2)?.setOnClickListener {
-            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
+            val dataToJob = JobFragmentDirections.actionDataFragmentToJobSpecFragment()
             findNavController().navigate(dataToJob)
         }
         view?.findViewById<ImageView>(R.id.imageView3)?.setOnClickListener {
-            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
+            val dataToJob = JobFragmentDirections.actionJobFragmentToJobSpecShovelFragment()
             findNavController().navigate(dataToJob)
         }
 
 
+
     }
+//    fun onClick(v: View){
+//        val lawnImage : ImageView = requireView().findViewById(R.id.imageView)
+//        val poopImage : ImageView = requireView().findViewById(R.id.imageView2)
+//        val shovelImage : ImageView = requireView().findViewById(R.id.imageView3)
+//        val clicked = false
+//        if (lawnImage ==)
+//    }
 
 }
