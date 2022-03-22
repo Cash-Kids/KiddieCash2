@@ -10,7 +10,7 @@
         android:id="@+id/textView4"
         android:layout_width="187dp"
         android:layout_height="25dp"
-        android:text="PASSWORD"
+        android:text="@string/password"
         android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

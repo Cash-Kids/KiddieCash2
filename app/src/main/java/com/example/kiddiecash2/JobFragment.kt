@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 
 
 class JobFragment : Fragment() {
@@ -20,7 +19,7 @@ class JobFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_data, container, false)
+        val view = inflater.inflate(R.layout.fragment_job, container, false)
 
 
 
@@ -62,12 +61,6 @@ class JobFragment : Fragment() {
 
 
     }
-//    fun onClick(v: View){
-//        val lawnImage : ImageView = requireView().findViewById(R.id.imageView)
-//        val poopImage : ImageView = requireView().findViewById(R.id.imageView2)
-//        val shovelImage : ImageView = requireView().findViewById(R.id.imageView3)
-//        val clicked = false
-//        if (lawnImage ==)
-//    }
+
 
 }
