@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +10,7 @@
         android:id="@+id/textView4"
         android:layout_width="187dp"
         android:layout_height="25dp"
-        android:text="PASSWORD"
+        android:text="@string/password"
         android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -91,16 +90,32 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginButton"
         android:layout_width="204dp"
         android:layout_height="48dp"
         android:text="Login"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <TextView
+        android:id="@+id/regLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="102dp"
+        android:text="Register"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

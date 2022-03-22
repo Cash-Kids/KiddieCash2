@@ -20,22 +20,42 @@
 
     <fragment
         android:id="@+id/jobFragment"
-        android:name="com.example.kiddiecash2.DataFragment"
+        android:name="com.example.kiddiecash2.JobFragment"
         android:label="fragment_job"
-        tools:layout="@layout/fragment_data">
+        tools:layout="@layout/fragment_job">
         <action
             android:id="@+id/action_dataFragment_to_jobSpecFragment"
             app:destination="@id/jobSpecFragment" />
+        <action
+            android:id="@+id/action_jobFragment_to_jobSpecShovelFragment"
+            app:destination="@id/jobSpecShovelFragment" />
+        <action
+            android:id="@+id/action_jobFragment_to_jobSpecLawn"
+            app:destination="@id/jobSpecLawn" />
     </fragment>
 
     <fragment
         android:id="@+id/jobSpecFragment"
-        android:name="com.example.kiddiecash2.JobSpecFragment"
+        android:name="com.example.kiddiecash2.JobSpecPoopFragment"
         android:label="fragment_job_spec"
-        tools:layout="@layout/fragment_job_spec" >
+        tools:layout="@layout/fragment_job_spec_poop" >
         <action
             android:id="@+id/action_jobSpecFragment_to_confirmationFragment"
             app:destination="@id/confirmationFragment" />
+        <argument
+            android:name="lawnJob"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='Lawn Warrior' />
+        <argument
+            android:name="poopJob"
+            app:argType="string"
+            android:defaultValue="Poop Patroller" />
+        <argument
+            android:name="shovelJob"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Shovel Soldier" />
     </fragment>
 
     <fragment
@@ -53,4 +73,22 @@
         android:name="com.example.kiddiecash2.ConfirmationFragment"
         android:label="fragment_confirmation"
         tools:layout="@layout/fragment_confirmation" />
+    <fragment
+        android:id="@+id/jobSpecLawn"
+        android:name="com.example.kiddiecash2.JobSpecLawn"
+        android:label="fragment_job_spec_lawn"
+        tools:layout="@layout/fragment_job_spec_lawn" >
+        <action
+            android:id="@+id/action_jobSpecLawn_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobSpecShovelFragment"
+        android:name="com.example.kiddiecash2.JobSpecShovelFragment"
+        android:label="fragment_job_spec_shovel"
+        tools:layout="@layout/fragment_job_spec_shovel" >
+        <action
+            android:id="@+id/action_jobSpecShovelFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
 </navigation>
