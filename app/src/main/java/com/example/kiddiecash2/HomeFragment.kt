@@ -9,6 +9,7 @@ import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.Navigation.findNavController
+import androidx.navigation.fragment.findNavController
 
 
 class HomeFragment : Fragment() {

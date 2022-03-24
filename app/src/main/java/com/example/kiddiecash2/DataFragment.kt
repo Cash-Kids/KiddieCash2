@@ -13,7 +13,7 @@ import androidx.navigation.fragment.navArgs
 
 class DataFragment : Fragment() {
 
-    val args: JobSpecFragment by navArgs()
+   // private val args: JobSpecFragment by JobSpecFragment()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,8 +33,8 @@ class DataFragment : Fragment() {
 
 
         view?.findViewById<ImageView>(R.id.imageView)?.setOnClickListener {
-            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
-            findNavController().navigate(dataToJob)
+            //val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
+           // findNavController().navigate(dataToJob)
 
             val imageView : ImageView = view.findViewById(R.id.imageView)
 //            val input = imageView.text.toString()
@@ -43,19 +43,19 @@ class DataFragment : Fragment() {
             val bundle = Bundle()
 //            bundle.putString("data", input)
             // want to transfer to JobSpecFragment
-            val dataFragment = JobSpecFragment()
+            var dataFragment = JobSpecFragment()
 //            fragment.arguments = bundle
 //            fragmentManager?.beginTransaction()?.replace(R.id.nav_container,fragment)?.commit()
 
 
         }
         view?.findViewById<ImageView>(R.id.imageView2)?.setOnClickListener {
-            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
-            findNavController().navigate(dataToJob)
+           // val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
+           // findNavController().navigate(dataToJob)
         }
         view?.findViewById<ImageView>(R.id.imageView3)?.setOnClickListener {
-            val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
-            findNavController().navigate(dataToJob)
+          //  val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
+            //findNavController().navigate(dataToJob)
         }
 
 

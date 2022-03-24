@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_homeFragment_to_dataFragment"
             app:destination="@id/jobFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_registrationFragment"
-            app:destination="@id/registrationFragment" />
     </fragment>
 
     <fragment
@@ -33,27 +30,22 @@
         android:name="com.example.kiddiecash2.JobSpecFragment"
         android:label="fragment_job_spec"
         tools:layout="@layout/fragment_job_spec" >
-        <action
-            android:id="@+id/action_jobSpecFragment_to_confirmationFragment"
-            app:destination="@id/confirmationFragment" />
         <argument
             android:name="jobImage1"
             app:argType="integer" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/registrationFragment"
-        android:name="com.example.kiddiecash2.RegistrationFragment"
-        android:label="fragment_registration"
-        tools:layout="@layout/fragment_registration" >
         <action
-            android:id="@+id/action_registrationFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_jobSpecFragment_to_blankFragment"
+            app:destination="@id/blankFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/confirmationFragment"
-        android:name="com.example.kiddiecash2.ConfirmationFragment"
-        android:label="fragment_confirmation"
-        tools:layout="@layout/fragment_confirmation" />
+        android:id="@+id/blankFragment"
+        android:name="com.example.kiddiecash2.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.kiddiecash2.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
 </navigation>

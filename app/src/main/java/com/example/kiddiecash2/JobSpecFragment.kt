@@ -7,10 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.fragment.navArgs
+import kotlin.reflect.KProperty
 
 class JobSpecFragment : Fragment() {
 
-    val args: JobSpecFragmentArgs by navArgs()
+    private val args: JobSpecFragmentArgs by navArgs()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,5 +26,9 @@ class JobSpecFragment : Fragment() {
         val jobImage = args.jobImage1
         val jobImageView = view.findViewById<ImageView>(R.id.displayJobImg)
         jobImageView.setImageResource(jobImage)
+    }
+
+    operator fun getValue(dataFragment: DataFragment, property: KProperty<*>) {
+
     }
 }
