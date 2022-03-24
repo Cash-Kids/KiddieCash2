@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.Navigation.findNavController
@@ -29,9 +30,14 @@ class HomeFragment : Fragment() {
 //        navController = Navigation.findNavController(view)
 
 
-        view?.findViewById<Button>(R.id.loginButton)?.setOnClickListener {
+        view.findViewById<Button>(R.id.loginButton)?.setOnClickListener {
             val loginToJob = HomeFragmentDirections.actionHomeFragmentToDataFragment()
             findNavController().navigate(loginToJob)
+        }
+
+        view.findViewById<TextView>(R.id.regLink)?.setOnClickListener {
+            val loginToRegistration = HomeFragmentDirections.actionHomeFragmentToRegistrationFragment()
+            findNavController().navigate(loginToRegistration)
         }
 
     }
