@@ -62,7 +62,7 @@
         android:id="@+id/registrationFragment"
         android:name="com.example.kiddiecash2.RegistrationFragment"
         android:label="fragment_registration"
-        tools:layout="@layout/fragment_registration" >
+        tools:layout="@layout/activity_register" >
         <action
             android:id="@+id/action_registrationFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
