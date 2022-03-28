@@ -17,7 +17,7 @@
         android:ems="10"
         android:hint="First Name"
         android:inputType="textPostalAddress"
-        android:minHeight="48dp"
+        android:minHeight="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
