@@ -11,24 +11,24 @@ import kotlin.reflect.KProperty
 
 class JobSpecFragment : Fragment() {
 
-    private val args: JobSpecFragmentArgs by navArgs()
+    private val args: JobSpecPoopFragmentArgs by navArgs()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_job_spec, container, false)
+        return inflater.inflate(R.layout.fragment_job_spec_poop, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val jobImage = args.jobImage1
-        val jobImageView = view.findViewById<ImageView>(R.id.displayJobImg)
-        jobImageView.setImageResource(jobImage)
+//        val jobImage = args.jobImage1
+//        val jobImageView = view.findViewById<ImageView>(R.id.displayJobImg)
+//        jobImageView.setImageResource(jobImage)
     }
 
-    operator fun getValue(dataFragment: DataFragment, property: KProperty<*>) {
+    operator fun getValue(dataFragment: JobFragment, property: KProperty<*>) {
 
     }
 }

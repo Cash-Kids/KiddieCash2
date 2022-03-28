@@ -24,7 +24,7 @@ class JobSpecLawn : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.submitBtn)?.setOnClickListener {
+        view.findViewById<Button>(R.id.button2)?.setOnClickListener {
             val loginToConfirmation =
                 JobSpecLawnDirections.actionJobSpecLawnToConfirmationFragment()
             findNavController().navigate(loginToConfirmation)

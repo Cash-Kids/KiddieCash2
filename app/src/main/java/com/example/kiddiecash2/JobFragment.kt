@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 
 
-class DataFragment : Fragment() {
+class JobFragment : Fragment() {
 
    // private val args: JobSpecFragment by JobSpecFragment()
 
@@ -20,7 +20,7 @@ class DataFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_data, container, false)
+        val view = inflater.inflate(R.layout.fragment_job, container, false)
 
 
 
@@ -33,8 +33,8 @@ class DataFragment : Fragment() {
 
 
         view?.findViewById<ImageView>(R.id.imageView)?.setOnClickListener {
-            //val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
-           // findNavController().navigate(dataToJob)
+            val dataToJob = JobFragmentDirections.actionJobFragmentToJobSpecLawn()
+            findNavController().navigate(dataToJob)
 
             val imageView : ImageView = view.findViewById(R.id.imageView)
 //            val input = imageView.text.toString()
@@ -50,12 +50,12 @@ class DataFragment : Fragment() {
 
         }
         view?.findViewById<ImageView>(R.id.imageView2)?.setOnClickListener {
-           // val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
-           // findNavController().navigate(dataToJob)
+            val dataToJob = JobFragmentDirections.actionDataFragmentToJobSpecFragment()
+            findNavController().navigate(dataToJob)
         }
         view?.findViewById<ImageView>(R.id.imageView3)?.setOnClickListener {
-          //  val dataToJob = DataFragmentDirections.actionDataFragmentToJobSpecFragment(args.jobImage1)
-            //findNavController().navigate(dataToJob)
+            val dataToJob = JobFragmentDirections.actionJobFragmentToJobSpecShovelFragment()
+            findNavController().navigate(dataToJob)
         }
 
 

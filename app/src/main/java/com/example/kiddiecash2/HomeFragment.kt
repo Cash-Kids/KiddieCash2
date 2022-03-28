@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
 
 
         view.findViewById<Button>(R.id.loginButton)?.setOnClickListener {
-            val loginToJob = HomeFragmentDirections.actionHomeFragmentToDataFragment()
+            val loginToJob = HomeFragmentDirections.actionHomeFragmentToJobFragment()
             findNavController().navigate(loginToJob)
         }
 
